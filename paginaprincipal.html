@@ -1,42 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Mi tienda</title>
+    <title>Inicio | TechStore</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <div class="encabezado">
+    <header class="encabezado">
         <h1>TechStore</h1>
 
-        <div class="menu"></div>
+        <nav class="menu" aria-label="Navegación principal">
             <a href="paginaprincipal.html">Inicio</a>
             <a href="catalogoproductos.html">Ver más</a>
             <a href="contacto.html">Click aquí</a>
-        </div>
-    </div>
+        </nav>
+    </header>
     
-    <div class="contenido">
-        <h1>Bienvenido a TechStore</h1>
-        <h3>La mejor elección en tienda de tocnología</h3>
-        <p>
-            En nuestra tienda encontraras productos tecnologicos 
-            como celulares, audifonos, cargadores y mucho más accesorios-
-        </p>
-        <img src="img/TECHStore.jpg" width="300">
-    </div>
+    <main class="contenido">
+        <section>
+            <h2>Bienvenido a TechStore</h2>
+            <h3>La mejor elección en tienda de tocnología</h3>
+            <p>
+                En nuestra tienda encontraras productos tecnologicos 
+                como celulares, audifonos, cargadores y mucho más accesorios-
+            </p>
+            <img src="img/TECHStore.jpg"
+            alt="Logo principal de la tienda TechStore"
+            width="300">
+        </section>
 
-    <div class="informacion">
-        <h2>Sobre nosotros</h2>
-        <p>
+        <section class="ofertas">
+            <h2>Ofertas especiales</h2>
+            <p>Tenemos los mejores precios para ti.</p>
+            <a href="catalogoproductos.html">Ver productos disponibles</a>
+        </section>
+
+        <section class="informacion">
+            <h2>Sobre nosotros</h2>
+            <p>
             Somos una tienda originalmente creada en Manabí, dedicada a la venta 
             de productos tecnologicos de buena calidad.
-        </p>
-    </div>
-
-    <div class="pie">
+            </p>
+        </section>
+    </main>
+    <footer class="pie">
         <p>TechStore 2026 - Todos los derechos reservados</p>
-    </div>
+    </footer>
 </body>
 </html>
