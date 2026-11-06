@@ -1,55 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
+    <title>Productos | TechStore</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <div class="encabezado">
+    <header class="encabezado">
         <h1>TechStore</h1>
 
-        <div class="menu">
+        <nav class="menu" aria-label="Navegación principal">
             <a href="paginaprincipal.html">Inicio</a>
             <a href="catalogoproductos.html">Productos</a>
             <a href="contacto.html">Click aquí</a>
-        </div>
-    </div>
+        </nav>
+    </header>
 
-    <div class="contenido">
-        <h1>Nuestros Productos</h1>
+    <main class="contenido">
+        <h2>Nuestros Productos</h2>
         <p>Conoce algunos de nuestros productos.</p>
 
-        <div class="ofertas">
+        <section class="ofertas">
             <h3>Celulares</h3>
-            <img src="img/celular.jpg" width="200">
+            <img src="img/celular.jpg"
+            alt="Celular moderno disponible en TechStore"
+            width="200">
             <p>Celulares modernos de diferentes marcas.</p>
             <p>Precio: $250</p>
-            <button onclick="alert('Producto Agregado')">Comprar</button>
-        </div>
+            <button type="button" class="comprar">Comprar</button>
+        </section>
     
 
-        <div class="ofertas">
+        <section class="ofertas">
          <h3>Audifonos</h3>
-            <img src="img/audifonos.jpg" width="200" >
+            <img src="img/audifonos.jpg"
+            alt="Audífonos inalámbricos disponibles en TechStore"
+            width="200" >
             <p>Audifonos Inalambricos calidad premium 1.1</p>
             <p>Precio: $35</p>
-            <button onclick="alert('Producto Aegregado')">Comprar</button>
-        </div>
+            <button type="button" class="comprar">Comprar</button>
+        </section>
 
     
-        <div class="ofertas">
+        <section class="ofertas">
             <h3>Cargadores</h3>
-            <img src="img/Cargadores.png" width="200" >
+            <img src="img/Cargadores.png"
+            alt="Cargador para dispositivos electrónicos" 
+            width="200" >
             <p>Cargadores originales</p>
             <p>Precio: $40</p>
-             <button onclick="alert('Producto Aegregado')">Comprar</button>
-        </div>
-    </div>
+             <button type="button" class="comprar">Comprar</button>
+        </section>
+    </main>
     
-    <div class="pie">
+    <footer class="pie">
         <p>TechStore 2026 - Todos los derechos reservados</p>
-    </div>
+    </footer>
 </body>
 </html>
