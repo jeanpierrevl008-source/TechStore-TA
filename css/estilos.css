@@ -1,0 +1,58 @@
+body {
+    background-color: #eeeeee;
+    font-family: Arial;
+    margin: 0;
+    color: gray;
+}
+
+.encabezado {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.encabezado h2 {
+    color: blue;
+}
+
+.menu { 
+    background-color: #333;
+    padding: 15px;
+}
+
+.menu a { 
+    color: gray;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.menu a:hover { 
+    color: black;
+}
+
+.contenido {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+}
+
+.ofertas { 
+    background-color: lightgray;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.informacion {
+    padding: 15px;;
+}
+
+.pie { 
+    background-color: black;
+    color: gray;
+    text-align: center;
+    padding: 10px;
+}
+
+button{
+    cursor: pointer;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="js/script.js">
+</head>
+<body>
+    <div class="encabezado">
+        <h1>TechStore</h1>
+
+        <div class="menu">
+            <a href="paginaprincipal.html">Inicio</a>
+            <a href="catalogoproductos.html">Productos</a>
+            <a href="contacto.html">Contacto</a>
+        </div> 
+    </div>
+
+    <div class="contenido">
+        <h1>Contactanos</h1>
+        <p>Completa el siguiente formulario para comunicarte con nosotros.</p>
+
+        <div class="ofertas">
+            <form id="formulario">
+                <h3>Formulario de contacto</h3>
+
+                <p>Nombre: </p>
+                <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+
+                <p>Correo Electronico: </p>
+                <input type="text" id="correo" placeholder="Ingresa tu correo">
+
+                <p>Asunto: </p>
+                <input type="text" id="asunto" placeholder="Escribe el asunto">
+
+                <p>Mensaje</p>
+                <textarea id="mensaje" placeholder="Escribe tu mensaje"></textarea>
+
+                <br><br>
+
+                <button type="button" onclick="enviarMensaje()">
+                    Enviar mensaje
+                </button>
+            </form>
+            <p id="resultado"></p>
+        </div>
+    </div>
+
+    <div class="pie">
+        <p>TechStore 2026 - Todos los derechos reservados</p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
