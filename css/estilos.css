@@ -1,58 +1,159 @@
+/* Configuración general */
+
+*{
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #eeeeee;
-    font-family: Arial;
+    background-color: #f4f6f8;
+    font-family: Arial, sans-serif;
     margin: 0;
-    color: gray;
+    color: #222222;
+    line-height: 1.6;
 }
 
+/* Encabezado */
 .encabezado {
-    background-color: black;
-    color: white;
+    background-color: #14213d;
+    color: #ffffff;
     padding: 20px;
 }
 
-.encabezado h2 {
-    color: blue;
+.encabezado h1 {
+    color: #ffffff;
+    margin-top: 0;
 }
 
-.menu { 
-    background-color: #333;
+/* Menú de navegación */
+.menu {
+    background-color: #263653;
     padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
-.menu a { 
-    color: gray;
-    margin: 10px;
+.menu a {
+    color: #ffffff;
     text-decoration: none;
+    padding: 8px;
 }
 
-.menu a:hover { 
-    color: black;
+.menu a:hover {
+    background-color: #405577;
+    text-decoration: underline;
 }
 
+/* Contenido principal */
 .contenido {
-    background-color: white;
-    margin: 20px;
+    background-color: #ffffff;
+    margin: 20px auto;
     padding: 20px;
+    max-width: 1100px;
+    border-radius: 8px;
 }
 
-.ofertas { 
-    background-color: lightgray;
+/* Secciones y ofertas */
+.ofertas {
+    background-color: #f0f2f5;
     padding: 20px;
     margin-top: 20px;
+    border-radius: 8px;
 }
 
 .informacion {
-    padding: 15px;;
+    padding: 15px;
 }
 
-.pie { 
-    background-color: black;
-    color: gray;
-    text-align: center;
-    padding: 10px;
+/* Imagenes adaptables */
+img {
+    max-width: 100%;
+    height: auto;
 }
 
-button{
+/* Formulario */
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+
+/* Botones */
+button {
+    background-color: #14213d;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    min-height: 44px;
     cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #263653;
+}
+
+/* Indicador de enfoque del teclado */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #b45309;
+    outline-offset: 3px;
+}
+
+/* Mnesaje del formulario */
+#resultado {
+    font-weight: bold;
+    color: #14213d;
+}
+
+/*Pie de página */
+.pie {
+    background-color: #14213d;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+    .contenido {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .encabezado {
+        padding: 15px;
+    }
+
+    .menu { 
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .menu a {
+        display: block;
+    }
 }
