@@ -1,20 +1,19 @@
 
-function enviarMensaje() {
+const formulario = document.getElementById("formulario");
 
-    var nombre = document.getElementById("nombre").value;
-    var correo = document.getElementById("correo").value;
-    var mensaje = document.getElementById("mensaje").value;
+formulario.addEventListener("submit", function(event){
+    event.preventDefault();
+    const nombre = document.getElementById("nombre").value.trim();
+    const correo = document.getElementById("correo").value.trim();
+    const asunto = document.getElementById("asunto").value.trim();
+    const mensaje = document.getElementById("mensaje").value.trim();
 
-    if (nombre == "" || correo == "" || mensaje == "") {
+    const resultado = document.getElementById("resultado");
 
-        document.getElementById("resultado").innerHTML =
-        "Por favor completa todos los campos";
-
-    } else {
-
-        document.getElementById("resultado").innerHTML =
-        "Gracias " + nombre + ", tu mensaje fue enviado";
-
+    if (nombre === "" || correo === "" || asunto === "" || mensaje === ""){
+        resultado.textContent = "Por favor, completa todos los campos.";
+    } else{
+        resultado.textContent = "Gracias " + nombre + ", tu mensaje fue enviado correctamente.";
+        formulario.reset() 
     }
-
-}
+});
